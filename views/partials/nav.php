@@ -8,12 +8,12 @@
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a href="/PHPForBeginners/demo/PHP_Partials/index.php" class="rounded-md text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 text-sm font-medium text-white" aria-current="page">Home</a>
-              <a href="/PHPForBeginners/demo/PHP_Partials/about.php" class="rounded-md bg-gray-900 text-white px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About Us</a>
-              <a href="/PHPForBeginners/demo/PHP_Partials/contact.php" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact Us</a>
-              <a href="/PHPForBeginners/demo/PHP_Partials/contact.php" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Testing</a>
+              <a href="/PHPForBeginners/demo/PHP_Partials/index.php" class="<?= urlIs('/PHPForBeginners/demo/PHP_Partials/index.php') ? 'rounded-md bg-gray-900 text-white' : 'text-gray-300' ?> text-gray-300 rounded-md hover:bg-gray-700 hover:text-white px-3 py-2 text-sm font-medium text-white" aria-current="page">Home</a>
+              <a href="/PHPForBeginners/demo/PHP_Partials/about.php" class="<?= urlIs('/PHPForBeginners/demo/PHP_Partials/about.php') ? 'rounded-md bg-gray-900 text-white' : 'text-gray-300' ?> hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium text-gray-300">About Us</a>
+              <a href="/PHPForBeginners/demo/PHP_Partials/contact.php" class="<?= urlIs('/PHPForBeginners/demo/PHP_Partials/contact.php') ? 'rounded-md bg-gray-900 text-white' : 'text-gray-300' ?> rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact Us</a>
+              <!-- <a href="/PHPForBeginners/demo/PHP_Partials/contact.php" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Testing</a> -->
             </div>
-          </div>
+          </div>                                                              
         </div>
         <div class="hidden md:block">
           <div class="ml-4 flex items-center md:ml-6">
